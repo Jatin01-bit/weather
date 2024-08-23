@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-image: url('./weather.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.inputs {
+    padding: 1.5rem 0;
+    text-align: center;
+    background: linear-gradient(135deg, #f3e6e8, #e6c6c8);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.inputs input[type="text"] {
+    height: 4rem;
+    width: calc(100% - 150px);
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border: 2px solid #555;
+    border-radius: 6px;
+    margin-right: 10px;
+    color: #212121;
+    background-color: #fff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.inputs input[type="text"]:focus {
+    border-color: #270aca;
+    background-color: #f3f3f3;
+}
+
+.inputs input[type="submit"] {
+    height: 4rem;
+    width: 120px;
+    background: #270aca;
+    font-weight: bold;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.inputs input[type="submit"]:hover {
+    background-color: #1b07a0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    text-align: center;
+    color: #444;
+}
+
+.wrapper {
+    background-color: #eef3fa;
+    height: auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper h2 {
+    padding: 15px 0;
+    background: #0548b5;
+    color: white;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.wrapper p {
+    margin: 10px 0;
+    text-align: left;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.wrapper h2 span, .wrapper p span {
+    font-size: 22px;
+    color: #0366d6;
+    font-weight: bold;
+}
+
